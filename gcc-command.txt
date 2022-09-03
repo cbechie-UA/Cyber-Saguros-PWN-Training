@@ -1,0 +1,1 @@
+gcc -o <binary_name> <file_name>.c -fno-stack-protector -z execstack -no-pie      
